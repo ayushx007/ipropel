@@ -16,14 +16,14 @@ export default function LandingPage() {
           <Image src={instructorImage} alt="Instructor" width={120} height={150} />
           <h2 className="text-2xl font-bold mt-4">Instructor</h2>
           <p className="text-center mt-2 text-gray-600">
-            If you're an instructor, please proceed to create the MCQs.
+            If you&apos;re an instructor, please proceed to create the MCQs.
           </p>
         </Link>
         <Link href="/learner" className="flex flex-col items-center border border-black bg-white p-6 rounded-lg shadow-2xl transform transition-transform hover:scale-105">
           <Image src={learnerImage} alt="Learner" width={150} height={150} />
           <h2 className="text-2xl font-bold mt-4">Learner</h2>
           <p className="text-center mt-2 text-gray-600">
-            If you're a student, please proceed to attempt the MCQs.
+            If you&apos;re a student, please proceed to attempt the MCQs.
           </p>
         </Link>
       </div>
