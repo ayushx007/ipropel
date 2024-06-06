@@ -6,6 +6,7 @@ import { fetchQuestions } from '../../services/api';
 import clock from '../../../public/clock.svg';
 import checkbox from '../../../public/checkbox.svg';
 import checkboxChecked from '../../../public/checkbox_checked.svg';
+import loader from '../../../public/loader.gif';
 
 interface Option {
   id: string;
@@ -77,7 +78,9 @@ export default function Learner() {
     router.push(`/result?score=${score}&timeout=${timeLeft <= 0 ? 'true' : 'false'}`);
   };
 
-  if (questions.length === 0) return <div>Loading...</div>;
+  if (questions.length === 0) return <div className='flex min-h-screen items-center justify-center'>
+    <Image src={loader} alt="Loader" width={100} height={100} />
+  </div>;
 
   const currentQuestion = questions[currentQuestionIndex];
 
