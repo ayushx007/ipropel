@@ -97,6 +97,7 @@ export default function Learner() {
           <div className="flex-1 bg-white p-6 rounded-lg shadow-lg mb-8 mr-4">
             <h2 className="text-xl font-semibold mb-4 font-tiro" style={{ fontSize: '30px', lineHeight: '39.9px' }}>Question {currentQuestionIndex + 1}</h2>
             <p className="mb-4 font-tiro" style={{ fontSize: '20px', lineHeight: '26.6px' }} dangerouslySetInnerHTML={{ __html: currentQuestion.question }}></p>
+            <hr className="border-black border-1 py-2" style={{ width: '98%', margin: '0 auto' }} />
             {currentQuestion.image && (
               <div className="mb-4 flex justify-center">
                 <Image src={currentQuestion.image} alt="Question image" width={200} height={200} />
